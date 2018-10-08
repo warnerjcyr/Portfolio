@@ -1,0 +1,472 @@
+/***********************************
+************************************
+General
+************************************
+***********************************/
+
+body {
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #032938;
+/*    overflow-y:hidden;*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    outline: none;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.section-padding {
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #868a6e;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+/***********************************
+Header
+***********************************/
+
+.header {
+    background-color: #032938;
+}
+
+.bg-color {
+    position: relative;
+    overflow: hidden;
+    min-height: 720px;
+
+}
+
+.bg-color::before {
+    content: "";
+    background: url('../img/philadelphia.jpg') center no-repeat;
+    background-size: cover;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.23;
+}
+
+.banner-text {
+    border-left: 3px solid #ed4039;
+    padding: 15px 40px;
+    color: #868a6e;
+    margin-top: 130px;
+}
+
+span, .header-name {
+    color: #ed4039;
+}
+
+.banner-text h2,
+.banner-text p {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+/***********************************
+Navigation
+***********************************/
+
+.navbar-expand-md
+.navbar-nav
+.nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbar-light {
+    background-color: transparent;
+    border: 0px;
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    padding-bottom: .6rem;
+}
+
+.navbar-brand img {
+    width: 75px;
+}
+
+.navbar-light
+.nav > li.nav-item > a.nav-link {
+    font-weight: 400;
+    color: #fff;
+    outline: none;
+}
+
+.navbar-light
+.navbar-brand,
+.navbar-light
+.navbar-brand:hover,
+.navbar-light
+.navbar-brand:focus {
+    color: #fff;
+    outline: none;
+}
+
+.navbar-light
+.nav > li.nav-item > a.nav-link:focus,
+.navbar-light .nav > li.nav-item > a.nav-link:hover {
+    color: #868a6e;
+    background-color: transparent;
+}
+
+.navbar-light
+.navbar-nav>.active>a,
+.navbar-light .navbar-nav>.active>a:focus,
+.navbar-light .navbar-nav>.active>a:hover {
+    color: #fffde0;
+    background-color: transparent;
+}
+
+.top-nav-collapse /* When scrolling */{
+    padding: 0;
+    background: #032938;
+}
+
+.navbar-toggler {
+    font-size: .95rem;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler {
+    position: relative;
+    background-color: #032938;
+    border-radius: 4px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #032938;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 64, 57, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.navbar-nav>li>a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navbar-brand {
+    float: left;
+}
+
+/*********************************************
+**********************************************
+Portfolio
+**********************************************
+*********************************************/
+
+.work {
+    padding-bottom: 30px;
+}
+
+#portfolio-border {
+    border-color: #ed4039;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/***********************************
+Card Styles
+***********************************/
+
+#projects {
+    background-color:#032938;
+    padding-top: 0px;
+}
+
+.card {
+    background-color: #032938;
+    border: none;
+    padding-bottom: 20px;
+}
+
+.card > a:hover {
+    transform: scale(1.01);
+    transition: transform .2s ease-in-out;
+}
+
+.title-text,
+.card-title
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+/***********************************
+Model
+***********************************/
+
+.modal-footer > a,
+.modal-footer > a:hover{
+    background-color: #ed4039;
+    border-color: #ed4039;
+}
+
+.modal-footer > a:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.modal-body p {
+    color: #000;
+}
+
+.modal-title {
+    color: #868a6e;
+}
+
+.img-fluid {
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #868a6e;
+    border-color: #6c757d;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+    overflow: scroll;
+}
+
+.navbar, .navbar-light, .fixed-top, .navbar-expand-md, .top-nav-collapse {
+    padding-right: 0px !important;
+}
+
+.modal-open .modal {
+    padding-right: 0px !important;
+}
+
+/***********************************
+About
+***********************************/
+
+.title-text {
+    padding: 0px 25px 0px 0px;
+    color: #868a6e;
+    border-right: 3px solid #ed4039;
+    font-size: 23px;
+}
+
+.me {
+    color: #ed4039;
+}
+
+.about-me {
+    max-width: 900px;
+}
+
+#about {
+    background-color: rgba(4, 30, 41, .4);
+    margin-bottom: -3px;
+    padding-bottom: 50px;
+}
+
+.about-text p {
+    color: #fff;
+    font-weight: 300;
+}
+
+/***********************************
+Contact
+***********************************/
+
+.col-lg-8 {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.contact-item-2, .contact-item {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item span {
+  align-items: center;
+}
+
+.contact-sec p {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 1rem;
+}
+
+.contact-sec {
+    padding-right: 15px;
+}
+
+.contact-sec a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: all 0.5s ease-in 0s;
+}
+
+#contact {
+    width: 100%;
+    background-color: rgba(8, 7, 7, 0.92);
+}
+
+contact-group {
+  margin-top: 30px;
+  padding: 0 5px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  fill: #fff;
+/*  transition: all .8s ease-in-out;*/
+}
+
+.icon:hover {
+  fill: #868a6e;
+}
+
+.contact-item .icon {
+  width: 60px;
+  height: 60px;
+  margin-left: 0;
+}
+
+/***********************************
+Footer
+***********************************/
+
+.footer {
+    padding: 40px 0;
+    background: #032938;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.col-md-6 {
+    flex: none;
+    max-width: 100%;
+}
+
+.copyright {
+    color: #868a6e;
+    font-weight: 300;
+}
+
+/***********************************
+Media queries
+***********************************/
+
+@media (max-width: 768px) {
+    
+    .navbar-light .navbar-collapse {
+        border-color: #fff;
+        border-top: 1px solid;
+    }
+    
+    .navbar-brand img {
+        margin-left: 10px;
+    }
+    
+    .bg-color {
+        min-height: 430px;
+    }
+
+    .navbar-header {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding-top: 5px;
+        padding-right: 15px !important;
+    }
+    
+    
+    .navbar-collapse /* Toggler-nav */ {
+        background-color: rgba(3,41,56,0.85);
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 980px) {
+    .title-text {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+    flex: none;
+    max-width: 100%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 550px) {
+    
+    .navbar-nav> li {
+        word-spacing: 5rem;
+    }
+    
+    .social-list {
+        margin-bottom: 15px;
+    }
+    
+    .banner-text h2, .banner-text p {
+        font-size: 22px;
+    }
+    
+    .title-text {
+        margin-bottom: 15px;
+    }
+}
